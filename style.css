@@ -1,0 +1,145 @@
+/* Base CSS */
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section-title h2 {
+    text-transform: uppercase;
+}
+.section-title p {
+  font-size: 16px;
+}
+.section-pading {
+    padding: 50px 0;
+}
+.section-title span {
+    color: #26a65b;
+}
+.single-price-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+.single-price-box h3 {
+    text-transform: capitalize;
+}
+.box-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.single-price-box:hover .box-icon {
+    color: #1fa;
+    transform: scale(1.1);
+}
+
+.pricing-list {
+    text-align: left;
+}
+.pricing-list ul {
+    list-style: outside none none;
+}
+.pricing-list li {
+    font-size: 16px;
+    line-height: 36px;
+    padding-left: 23px;
+    position: relative;
+    transition: all 0.2s ease 0s;
+}
+.pricing-list li::after {
+    color: #1fa;
+    content: "";
+    font-family: fontawesome;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.pricing-list li:hover {
+    margin-left: 5px;
+}
+.single-price-box:hover {
+    border-color: #1fa;
+    box-shadow: 3px 3px 5px;
+}
+
+.pricing-list li.cross::after {
+  color: #ed1313;
+  content: "";
+}
+.pricing-count h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: none;
+}
+.more-btn {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #222;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+}
+
+.more-btn:hover {
+    background: #008000 none repeat scroll 0 0;
+    color: #fff;
+}
+.box-icon:hover {
+    color: #1fa;
+}
+.single-price-box:hover .box-iocn {
+    transform: scale(1.1);
+}
+
+
+
+
