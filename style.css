@@ -1,29 +1,21 @@
 /* Base CSS */
-
 .alignleft {
     float: left;
     margin-right: 15px;
 }
-
 .alignright {
     float: right;
     margin-left: 15px;
 }
-
 .aligncenter {
     display: block;
     margin: 0 auto 15px;
 }
-
-a:focus {
-    outline: 0 solid
-}
-
+a:focus { outline: 0 solid }
 img {
     max-width: 100%;
     height: auto;
 }
-
 h1,
 h2,
 h3,
@@ -33,112 +25,166 @@ h6 {
     margin: 0 0 15px;
     font-weight: 700;
 }
-
 body {
-    font-family: 'Lato', sans-serif;
+  color: #626262;
+  font-family: 'Playfair Display', serif,'Ubuntu', sans-serif;
+    
+}
+a:hover { text-decoration: none }
+
+
+
+.navigation-wrap {
+    margin: 30px 0;
 }
 
-a:hover {
-    text-decoration: none
-}
-
-
-.section-title {
-    margin-bottom: 50px;
-    text-align: center;
-}
-.section-title h2 {
-    text-transform: uppercase;
-}
-.section-title p {
-  font-size: 16px;
-}
-.section-pading {
-    padding: 50px 0;
-}
-.section-title span {
-    color: #26a65b;
-}
-.single-price-box {
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: center;
-    transition: all 0.3s ease 0s;
-}
-.single-price-box h3 {
-    text-transform: capitalize;
-}
-.box-icon {
-  font-size: 60px;
-  margin-bottom: 20px;
-  transition: all 0.3s ease 0s;
-}
-
-.single-price-box:hover .box-icon {
-    color: #1fa;
-    transform: scale(1.1);
-}
-
-.pricing-list {
-    text-align: left;
-}
-.pricing-list ul {
+.main-menu  ul {
+    float: right;
     list-style: outside none none;
 }
-.pricing-list li {
-    font-size: 16px;
-    line-height: 36px;
-    padding-left: 23px;
-    position: relative;
-    transition: all 0.2s ease 0s;
+.main-menu li {
+    float: left;
 }
-.pricing-list li::after {
-    color: #1fa;
-    content: "";
-    font-family: fontawesome;
-    left: 0;
-    position: absolute;
-    top: 0;
-}
-.pricing-list li:hover {
-    margin-left: 5px;
-}
-.single-price-box:hover {
-    border-color: #1fa;
-    box-shadow: 3px 3px 5px;
-}
-
-.pricing-list li.cross::after {
-  color: #ed1313;
-  content: "";
-}
-.pricing-count h3 {
-    font-size: 20px;
-    margin-top: 20px;
-    text-transform: none;
-}
-.more-btn {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    color: #222;
+.main-menu a {
+    color: #666666;
     display: inline-block;
-    font-size: 17px;
-    font-weight: 700;
-    padding: 10px 30px;
-    text-transform: capitalize;
-    transition: all 0.3s ease 0s;
+    font-size: 14px;
+    padding: 10px 66px;
+    text-transform: uppercase;
 }
 
-.more-btn:hover {
-    background: #008000 none repeat scroll 0 0;
+
+
+
+
+
+.slider-area {
+    margin: 50px auto;
+}
+
+
+.feature-area h3 ,.single-blog h3 {
+  color: #b4ad9e;
+  font-family: ubuntu;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.feature-area h2 , single-blog h2 {
+    color: #616161;
+    font-family: playfair display;
+    font-size: 30px;
+    line-height: 50px;
+}
+.feature-area p {
+  color: #626262;
+  font-family: playfair display;
+  font-size: 14px;
+  line-height: 25px;
+  padding-right: 50px;
+}
+.feature-area form input {
+    border: medium none;
+    color: #c7d1dc;
+    margin: 20px 0;
+    text-transform: capitalize;
+    width: 75%;
+}
+
+
+/*
+Blog Area
+*/
+
+.blog-area img {
+    display: block;
+    margin: auto;
+    width: 97%;
+}
+.single-blog {
+    margin: 25px 0;
+}
+
+/*Signup area*/
+
+.section-title input, .section-title form button[type="button"] {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+}
+.section-title button[type="button"] {
+    float: right;
+}
+.section-title > form {
+    border-bottom: 1px solid #222;
+    padding: 10px 0;
+}
+.newslater-area {
+    background: #f0f0f0 none repeat scroll 0 0;
+    padding: 80px 0;
+}
+
+
+.load-meore-bnt {
     color: #fff;
+    margin: 15px 0;
+    text-align: center;
 }
-.box-icon:hover {
-    color: #1fa;
+.load-meore-bnt > a {
+    border: 1px solid #b9af9f;
+    color: #b9af9f;
+    display: inline-block;
+    font-size: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
 }
-.single-price-box:hover .box-iocn {
-    transform: scale(1.1);
+
+
+.section-padding{
+    padding: 60px 0;
 }
+/*Footer Area*/
+
+
+
+footer {
+  background: #efefef none repeat scroll 0 0;
+  padding: 25px 0;
+}
+.footer-menu-left {
+    float: left;
+    margin-left: 30px;
+}
+.footer-menu-left ul {
+    list-style: outside none none;
+}
+.footer-menu-left ul li {
+    float: left;
+    padding: 0 20px;
+    text-transform: capitalize;
+}
+.footer-menu-right {
+    float: right;
+}
+.footer-menu-left ul {
+    display: inline;
+}
+.footer-menu-right ul {
+    list-style: outside none none;
+}
+.footer-menu-right ul li {
+    color: #ddd;
+    float: left;
+}
+.footer-menu-right ul li a {
+    
+    font-size: 15px;
+    padding: 0 10px;
+    color: #616161;
+}
+
+
+
 
 
 
