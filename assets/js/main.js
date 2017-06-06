@@ -68,10 +68,14 @@
         });
         
         
-        var overlay = document.getElementById("overlay");
+        
+        
+        $(window).load(function(){
+               
+                $("#preloader").fadeOut();
+                $(".preloder-spin").delay(350).fadeOut();
 
-            window.addEventListener('load', function(){
-              overlay.style.display = 'none';
+               
         });
         
 

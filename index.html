@@ -17,10 +17,11 @@
         
     </head>
     <body>
-       <div id="overlay">
-            <div class="spinner"></div> 
+        <div id="preloader">
+            <div class="preloder-spin">
+            </div>
         </div>
-        <div class="hero-area-wrap">
+        <div id="nir" class="hero-area-wrap">
             <div class="header-area" id="fixed-menu">
                 <div class="container">
                     <div class="row">
@@ -32,13 +33,13 @@
                         <div class="col-sm-10 text-right">
                             <nav class="mainmenu">
                                 <ul>
-                                    <li><a href="#">home</a></li>
-                                    <li><a href="#">services</a></li>
-                                    <li><a href="#">features</a></li>
-                                    <li><a href="#">demo video</a></li>
-                                    <li><a href="#">screenshot</a></li>
-                                    <li><a href="#">price</a></li>
-                                    <li><a href="#">blog</a></li>
+                                    <li><a href="#nir">home</a></li>
+                                    <li><a href="#service">services</a></li>
+                                    <li><a href="#features">features</a></li>
+                                    <li><a href="#demo-video">demo video</a></li>
+                                    <li><a href="#screenshot">screenshot</a></li>
+                                    <li><a href="#price">price</a></li>
+                                    <li><a href="#blog">blog</a></li>
                                     <li><a href="#">contact</a></li>
                                 </ul>
                             </nav>
@@ -66,7 +67,7 @@
             </div>
         </div>
         
-        <section class="service-section text-center pd-100">
+        <section id="service" class="service-section text-center pd-100">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -113,7 +114,7 @@
             </div>
         </section>
         
-        <section class="apps-features pd-100">
+        <section id="features" class="apps-features pd-100">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-12">
@@ -176,7 +177,7 @@
             </div>
         </section>
         
-        <section class="intro-video">
+        <section id="demo-video" class="intro-video">
               <div class="intro-overlay"></div>
                <video autoplay loop class="bg-video">
                    <source src="assets/video/officeloop_low.mp4" type="video/mp4">
@@ -218,7 +219,7 @@
             </div>
         </section>
         
-        <section class="app-preview">
+        <section id="screenshot" class="app-preview">
             <div class="container">
                <div class="row">
                    <div class="col-md-12">
@@ -273,7 +274,7 @@
             </div>
         </section>
         
-        <section class="pricing-section pd-100">
+        <section id="price" class="pricing-section pd-100">
             <div class="container">
                <div class="row">
                    <div class="col-md-12">
@@ -367,7 +368,7 @@
             </div>
         </section>
         
-       <section class="blog">
+       <section  id="blog"class="blog-seciotn">
            <div class="container">
                <div class="row text-center">
                    <div class="col-md-12">
@@ -614,5 +615,43 @@
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/main.js"></script>
+        
+        <script>
+            $('a[href*="#"]')
+              // Remove links that don't actually link to anything
+              .not('[href="#"]')
+              .not('[href="#0"]')
+              .click(function(event) {
+                // On-page links
+                if (
+                  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+                  && 
+                  location.hostname == this.hostname
+                ) {
+                  // Figure out element to scroll to
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                  // Does a scroll target exist?
+                  if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000, function() {
+                      // Callback after animation
+                      // Must change focus!
+                      var $target = $(target);
+                      $target.focus();
+                      if ($target.is(":focus")) { // Checking if the target was focused
+                        return false;
+                      } else {
+                        $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                        $target.focus(); // Set focus again
+                      };
+                    });
+                  }
+                }
+              });
+        </script>
     </body>
 </html>
