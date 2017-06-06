@@ -7,11 +7,69 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
  
     
+.template-owner {
+    padding: 0;
+}
+.mainmenu a {
+    padding-left: 17px;
+}
+.apps-screen-items .owl-controls .owl-nav div {
+ left: 0;
+}
+.apps-screen-items .owl-controls .owl-nav div.owl-next {
+  right: 0;
+}
+.blog-img iframe {
+  height: 150px;
+}
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
  
     
+.template-owner {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.mainmenu {
+    text-align: center;
+}
+.hero-slide-text {
+    padding-top: 250px;
+}
+.hero-slide {
+    padding-bottom: 50px;
+}
+.header-area.sticky {
+    position: absolute;
+}
+.single-features-item {
+    text-align: center;
+}
+.price-item {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+}
+.team-member {
+    margin-bottom: 30px;
+}
+.team-img > img {
+    width: 100%;
+}
+.primary-footer .col-sm-3 {
+    margin-bottom: 30px;
+}
+.footer-s-link {
+    margin-top: 21px;
+    text-align: center;
+}
+.apps-screen-items .owl-controls .owl-nav div {
+ left: 0;
+}
+.apps-screen-items .owl-controls .owl-nav div.owl-next {
+  right: 0;
+}
+
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
