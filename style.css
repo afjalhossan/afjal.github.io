@@ -243,6 +243,7 @@ a,a:hover { text-decoration: none; color: inherit}
     padding: 180px 0;
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 .intro-play-btn {
     font-size: 22px;
@@ -293,10 +294,10 @@ a,a:hover { text-decoration: none; color: inherit}
     background: #367095 none repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;
-    display: none;
     font-size: 40px;
     height: 40px;
     left: -8%;
+    display: none;
     line-height: 40px;
     margin-top: -30px;
     opacity: 0;
