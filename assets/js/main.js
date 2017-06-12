@@ -78,6 +78,11 @@
                
         });
         
+        $("body").scrollspy({
+          target: '.navbar-collapse',
+          offset: 50,
+      });
+        
 
     });
 
