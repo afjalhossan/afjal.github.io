@@ -1,0 +1,19 @@
+.hero-area{background-image: url(assets/img/hero-2.jpg); background-color: #3f88f0}
+a.bordered-btn, input[type="submit"], button{ background-color: #06d6a0;}
+
+
+.hero-area h1 {
+    color: #fff;
+    font-size: 48px;
+}
+.hero-area {
+    background-position: center bottom;
+    background-size: cover;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 100px 0;
+}
+.hero-area h1 {
+    margin-top: 130px;
+}
