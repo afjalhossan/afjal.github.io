@@ -1,0 +1,95 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 
+.logo img {
+  height: 60px;
+}
+.contact-img img {
+    margin-top: 150px;
+    width: 150px;
+}
+.mainmenu ul.nav.navbar-nav li a {
+    font-size: 18px;
+    padding: 25px 10px;
+}
+.social-links {
+    top: 22px;
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li a {
+    padding: 25px 10px;
+}
+.header-text h2 {
+    font-size: 50px;
+}
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+ 
+   
+.navbar-toggle {
+    border-color: #fff;
+    display: block;
+    float: none;
+    margin: 0;
+}
+.icon-bar {
+}
+.navbar-toggle .icon-bar {
+    background: #fff none repeat scroll 0 0;
+}
+.logo {
+    padding-bottom: 35px;
+    text-align: center;
+}
+    
+.mobile-menu ul.nav.navbar-nav {
+    background: #333 none repeat scroll 0 0;
+    text-align: center;
+}
+.mobile-menu ul.nav.navbar-nav li {
+    display: block;
+}
+.mobile-menu ul.nav.navbar-nav li a {
+    border-bottom: 1px solid #111;
+    padding: 10px 0;
+}
+.logo {
+    padding: 0;
+}
+.social-links {
+    top: -30px;
+}
+    .is-sticky .social-links{
+        top: -30px;
+    }
+
+.contact-img {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contact-img img:first-child {
+    margin-bottom: 15px;
+}
+.footer-widget {
+    margin-bottom: 50px;
+}
+
+.header-text h2 {
+    font-size: 30px;
+}
+.btn-filled {
+    margin-bottom: 20px;
+}
+
+ 
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}

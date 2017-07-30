@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus textare:focus, input:focus, button:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4, h5, h6{
+    
+    font-family: 'Yeseva One', cursive;
+    font-weight: 700;
+}
+
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, p, blockquote,
+pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+body {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 16px;
+}
+a,a:hover { text-decoration: none; color: inherit}
+
+.top-area-bg{background: url(assets/img/home1-bg.jpg);background-attachment: fixed}
+.header-text h2{background: url(assets/img/line_symble.png);}
+
+
+
+.top-area{
+    position: relative;
+}
+.is-sticky .header-area {
+    z-index: 9999 !important;
+}
+.header-area {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.header-area::after, .logo img, .mainmenu ul.nav.navbar-nav li a, .social-links{transition: .4s;}
+.is-sticky .header-area::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.is-sticky .logo img {
+    height: 60px;
+    margin-top: 5px;
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li a {
+    padding: 25px 15px;
+}
+.is-sticky .social-links {
+    top: 23px;
+}
+
+.top-area {
+    position: relative;
+}
+.logo img {
+    height: 93px;
+}
+.top-area-bg {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.mainmenu ul.nav.navbar-nav li {
+    display: inline-block;
+    float: none;
+    position: relative;
+    text-transform: capitalize;
+}
+.mainmenu ul.nav.navbar-nav li a {
+    color: #fff;
+    font-size: 20px;
+    padding: 40px 15px;
+}
+.mainmenu ul.nav.navbar-nav li:hover a{
+    background: none;
+} 
+.mainmenu ul.nav.navbar-nav li.active::before {
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.mainmenu .nav > li > a:focus, .mainmenu .nav > li > a:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.is-sticky .mainmenu .nav li.active a {
+    color: #d9b241;
+}
+
+.header-text{
+    padding: 100px 0;
+}
+.header-text h2 {
+  color: #fff;
+  font-size: 75px;
+  font-weight: 400;
+  padding: 50px 0 70px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.mainmenu ul.nav.navbar-nav {
+    float: none;
+    text-align: right;
+}
+
+
+.btn-filled {
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 30px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+    margin: 0 5px;
+}
+.btn-filled::after {
+    background: #262626 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.btn-filled.extra-clr-btn:after{
+    background: #c7ae58;
+}
+
+.mainmenu {
+    padding-right: 35px;
+    position: relative;
+}
+.social-links {
+    position: absolute;
+    right: 0;
+    top: 38px;
+}
+.social-links a {
+    color: #d9b241;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+
+.section-padding {
+    padding: 80px 0;
+}
+.about-area{
+    background: url(assets/img/pattern.png);
+}
+.section-title {
+    background: rgba(0, 0, 0, 0) url("assets/img/section-devine.png") no-repeat scroll center bottom;
+    color: #cc9900;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+.about-text {
+    margin-top: 30px;
+}
+.author-info {
+    margin-top: 30px;
+}
+
+
+
+
+.igredients-area {
+  background: #ddd url("assets/img/intedients-bg.jpg") repeat scroll center center / cover ;
+    background-attachment: fixed;
+}
+.white-color {
+    color: #fff;
+}
+.ingredients-text {
+    color: #fff;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+}
+.ingredients-text::before ,.single-testimonial-list:before{
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.section-title.white-color {
+    background: rgba(0, 0, 0, 0) url("assets/img/intedients-devine.png") no-repeat scroll center bottom;
+}
+
+
+
+
+.single-food-menu h2 {
+    border-bottom: 1px solid #cc9900;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.single-food-menu span {
+    float: right;
+}
+.single-food-menu {
+    margin-bottom: 40px;
+}
+
+.single-food-menu.special {
+    border: 1px solid #888785;
+    padding: 10px;
+    position: relative;
+}
+.single-food-menu.special::before {
+    background: #c89f2d none repeat scroll 0 0;
+    color: #fff;
+    content: "SPECIAL";
+    font-size: 14px;
+    padding: 2px 10px;
+    position: absolute;
+    right: -1px;
+    top: -25px;
+}
+
+
+
+
+.testimonial-area {
+    background: rgba(0, 0, 0, 0) url("assets/img/testimonial-bg.jpg") repeat scroll 0 0;
+    background-attachment: fixed;
+}
+.single-testimonial-list {
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    padding: 30px;
+}
+.guest-info {
+  margin-top: 18px;
+  font-size: 18px;
+}
+.testimonial-list::before {
+    color: #f2f4f4;
+    content: "\f10d";
+    font-family: fontawesome;
+    font-size: 20px;
+    left: 5px;
+    position: absolute;
+    top: 124px;
+}
+
+
+.contact-area{
+    background-image: url(assets/img/pattern.png);
+}
+.contact-img img:first-child {
+    margin-right: 30px;
+}
+.contact-img img {
+    width: 205px;
+}
+.contact-form {
+    margin-top: 30px;
+    text-align: left;
+}
+.contact-form label {
+    color: #e8b013;
+}
+.contact-form input, .contact-form select {
+    border: 1px solid #e8b013;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 100%;
+}
+.book-btn {
+    background: #e8b013 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    display: block;
+    margin: 25px auto 0;
+    padding: 5px 25px;
+    text-transform: capitalize;
+}
+.footer-cart {
+    margin-top: 30px;
+}
+.footer-cart a {
+    color: #fff;
+    margin: 0 4px;
+}
+.footer-social-icon a {
+    color: #fff;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 0 5px;
+}
+.footer-area h2.section-title {
+    background: rgba(0, 0, 0, 0) url("assets/img/small-line.png") no-repeat scroll center bottom;
+    color: #fff;
+    font-size: 21px;
+    text-transform: capitalize;
+}
+.footer-area {
+    background: #333 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+
