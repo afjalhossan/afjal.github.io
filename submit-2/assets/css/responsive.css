@@ -1,0 +1,126 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 
+.logo img {
+    display: block;
+    margin: 0 auto;
+}
+.connect-bar {
+    text-align: center;
+}
+.connect-bar > a {
+    float: none;
+}
+.single-service {
+    margin-bottom: 50px;
+}
+p.service-text {
+    left: 0;
+    top: 70%;
+}
+.newslater-title > h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.newslater-area {
+    padding-bottom: 50px;
+}
+.site-footer ul {
+    min-width: 148px;
+}
+.footer-right.text-right {
+    margin-top: 35px;
+    text-align: center;
+}
+.member-service {
+    margin-bottom: 30px;
+}
+
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+ 
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+.navbar-toggle {
+    border-color: #fff;
+    float: none;
+    margin: 0;
+}
+.icon-bar {
+    background: #fff none repeat scroll 0 0;
+}
+.logo img {
+    height: 58px;
+}
+.logo {
+    padding-top: 20px;
+    text-align: center;
+}
+.mainmenu {
+    text-align: center;
+}
+.connect-bar {
+    text-align: center;
+}
+.is-sticky .navbar-toggle {
+    border-color: #333;
+}
+.is-sticky .icon-bar {
+    background: #333 none repeat scroll 0 0;
+}
+.hero-text {
+    width: 100%;
+}
+.resize-area {
+    display: none;
+}
+.hero-area {
+    color: #fff;
+    height: 500px;
+}
+p.service-text {
+    left: 0;
+    top: 45%;
+}
+.single-service {
+    margin-bottom: 35px;
+}
+.newslater-title {
+}
+.newslater-title > h2 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+.newslatter-form {
+    padding: 25px 0;
+}
+.newslatter-form input[type="text"], input[type="email"] {
+    width: 90%;
+}
+.newslatter-form input[type="submit"] {
+    margin-top: 20px;
+    width: 80%;
+}
+.footer-right.text-right {
+    margin-top: 30px;
+    text-align: center;
+}
+    
+.member-service.sevice-bg-2::after {
+    border-width: 0 160px 160px 0;
+}
+.member-service.sevice-bg-1::before {
+    border-width: 160px 0 0 160px;
+}
+
+}
