@@ -1,0 +1,61 @@
+.hero-area{
+    background: url(assets/img/hero-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #3396F3;
+}
+
+
+.bordered-btn, input[type="submit"], button[type="submit"]{
+    background: #06d6a0;
+}
+.hero-content h1 {
+    color: #fff;
+    font-size: 47px;
+    margin-top: 80px;
+}
+.hero-area {
+    color: #fff;
+}
+
+.about-sec-content h3 {
+    font-size: 22px;
+    margin-bottom: 45px;
+}
+.about-sec-content .bordered-btn {
+    margin-top: 20px;
+}
+.about-sec-content {
+    margin-top: 100px;
+}
+.single-srvc-box {
+    display: table;
+    height: 195px;
+    padding: 30px;
+    width: 100%;
+    -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+    
+}
+.single-srvc-box:hover{
+    background-color: #05bdfe;background-color: -moz-linear-gradient(left, #05bdfe 0%, #2989d8 50%, #7db9e8 100%);
+    background-color: -webkit-linear-gradient(left, #05bdfe 0%,#2989d8 50%,#7db9e8 100%);
+    background-color: linear-gradient(to right, #05bdfe 0%,#2989d8 50%,#7db9e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05bdfe', endColorstr='#7db9e8',GradientType=1 );
+    
+    
+}
+.single-srvc-box:hover i.fa ,.single-srvc-box:hover h3{
+    color: #fff;
+}
+.single-service-box-tablecell {
+  vertical-align: middle;
+  display: table-cell;
+}
+.srvc-icn {
+    color: #24a4f7;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
