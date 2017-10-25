@@ -1,0 +1,110 @@
+.header-area {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-area .mainmenu a {
+    color: #fff;
+}
+
+.header-area .mainmenu a:hover {
+    color: #06d6a0;
+}
+
+.slider-bg-1{
+    background-image: url(../img/hero-bg-3.jpg);
+}
+.single-slide-item:after{
+background: rgb(3,177,208);
+background: linear-gradient(45deg, rgba(3,177,208,1) 0%,rgba(3,177,208,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03b1d0', endColorstr='#03b1d0',GradientType=1 );
+}
+.single-slide-item {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.slider-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.slider-wrapper h2 {
+    font-size: 65px;
+    line-height: 70px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.slider-wrapper p {
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.single-slide-item:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    z-index: -1;
+}
+
+.slider-wrapper a.video-play-btn {
+    background: #06d6a0;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 22px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 26px;
+    color: #fff;
+    padding-left: 4px;
+}
+
+.homepage3-slide .owl-controls .owl-nav div {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: -10px;
+    opacity: .8;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.homepage3-slide .owl-controls .owl-nav div.owl-prev {
+    left: auto;
+    right: 50px;
+}
+
+.homepage3-slide .owl-controls .owl-nav div:hover {
+    opacity: 1;
+}
+
+.homepage3-slide .owl-dots div {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    left: 50%;
+}
+.homepage3-slide .owl-dots div.active{
+    background-color: #ddd;
+}
+.homepage3-slide .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
